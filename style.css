@@ -13,11 +13,26 @@ body{
     align-items: center;
     background: linear-gradient(135deg, rgb(233, 183, 255),rgb(13, 0, 33));
 }
+.tlt{
+    color: rgb(13, 0, 101);
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tlt img{
+    width:50px;
+    margin-left:10px;
+}
 
 .container{
     width: 400px;
     height: min-content;
-    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: white;
     border-radius: 12px;
     padding: 28px;
 
@@ -28,24 +43,32 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 
 }
 .search-box input{
     width: 84%;
     font-size: 20px;
+    font-family: 'Courier New', Courier;
     text-transform: capitalize;
-    color: black;
-    background-color: rgb(225, 225, 255);
+    font-weight: 600;
+    background: linear-gradient(120deg,rgb(7, 1, 38),rgb(42, 5, 176));
+    color: rgb(254, 255, 255);
     padding: 12px 16px;
     border-radius: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(0, 136, 255);
 }
 .search-box input::placeholder{
-    color: black;
+    font-family: 'Courier New', Courier;
+    font-weight: 600;
+    color: white;
+    /* color: linear-gradient(120deg,rgb(7, 1, 38),rgb(42, 5, 176)); */
 }
 .search-box button{
     width: 46px;
     height: 46px;
-    background-color: rgb(225, 225, 255);
+    background-color: rgb(255, 255, 255);
     color:rgb(1, 1, 70);
     border-radius: 50%;
     cursor: pointer;
@@ -135,4 +158,45 @@ body{
 }
 .location-not-found img{
     width: 80%;
+}
+.get-loc div{
+    font-family: 'Courier New', Courier;
+    font-weight: 600;
+    margin-top: 20px;
+    width: 84%;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: rgb(189, 244, 255);
+    background: linear-gradient(120deg,rgb(7, 1, 38),rgb(42, 5, 176));
+    padding: 12px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgb(0, 136, 255);
+    text-align: center;
+    
+}
+.get-loc div:hover,.search-box input:hover{
+    background: linear-gradient(120deg,rgb(42, 5, 176),rgb(7, 1, 38));
+    box-shadow: 5px 5px 10px rgb(146, 122, 250);
+}
+.get-loc{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.get-loc button{
+    width: 46px;
+    height: 46px;
+    background-color: rgb(255, 255, 255);
+    color:rgb(1, 1, 70);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 25px;
+}
+.get-loc button:hover{
+    color: rgb(225, 225, 255);
+    background-color: rgb(1, 1, 70);
+    font-size: 30px;
 }
