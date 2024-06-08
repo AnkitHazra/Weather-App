@@ -9,13 +9,19 @@
 </head>
 <body>
     <div class="container">
+        <h1 class="tlt">Weather App <img src="assets/Screenshot 2024-06-08 140344.png" alt="" /></h1>
         <div class="header">
             <div class="search-box">
-                <input type="text" placeholder="Enter Your Location" class="input-box">
+                <input type="text" name="cty" placeholder="Enter Your Location" class="input-box">
                 <button class="fa-solid fa-magnifying-glass-location" id="searchBtn"></button>
             </div>
         </div>
-
+     
+        <div class="get-loc">
+            <div>Get My Location</div>
+            <button class="fa-solid fa-location-dot" id="searchBtn-2"></button>
+        </div>
+     
         <div class="location-not-found">
             <h1>Sorry, Location not found!!!</h1>
             <img src="assets/404.png" alt="404 Error">
